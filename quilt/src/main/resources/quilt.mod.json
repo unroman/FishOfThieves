@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "mixin": [
+    "mixins.fishofthieves.json",
+    "mixins.fishofthieves_fabric.json"
+  ],
+  "quilt_loader": {
+    "group": "${group}",
+    "id": "fishofthieves",
+    "version": "${version}",
+    "name": "Fish of Thieves",
+    "description": "A mod adds all the fish from Sea of Thieves, fish fer ye pirate!",
+    "authors": [
+      "SteveKunG",
+      "PloyiinGz"
+    ],
+    "icon": "logo.png",
+    "contact": {
+      "homepage": "https://www.curseforge.com/minecraft/mc-mods/fish-of-thieves",
+      "sources": "https://github.com/SteveKunG/FishOfThieves",
+      "issues": "https://github.com/SteveKunG/FishOfThieves/issues"
+    },
+    "license": "MIT",
+    "environment": "*",
+    "intermediate_mappings": "net.fabricmc:intermediary",
+    "entrypoints": {
+      "main": [
+        "com.stevekung.fishofthieves.quilt.FishOfThievesQuilt"
+      ],
+      "modmenu": [
+        "com.stevekung.fishofthieves.fabric.modmenu.ModMenuIntegration"
+      ]
+    },
+    "depends": [
+      {
+        "id": "quilt_loader",
+        "version": "*"
+      },
+      {
+        "id": "quilt_base",
+        "version": "*"
+      },
+      {
+        "id": "minecraft",
+        "version": "1.19.2"
+      },
+      {
+        "id": "cloth-config",
+        "version": ">=8.2"
+      }
+    ]
+  }
+}
